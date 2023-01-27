@@ -1,7 +1,7 @@
 # Component DForm
 
-[![npm](https://img.shields.io/npm/v/quasar-ui-dash-dev.svg?label=quasar-ui-dash-dev)](https://www.npmjs.com/package/quasar-ui-dash-dev)
-[![npm](https://img.shields.io/npm/dt/quasar-ui-dash-dev.svg)](https://www.npmjs.com/package/quasar-ui-dash-dev)
+[![npm](https://img.shields.io/npm/v/dash-dev.svg?label=dash-dev)](https://www.npmjs.com/package/dash-dev)
+[![npm](https://img.shields.io/npm/dt/dash-dev.svg)](https://www.npmjs.com/package/dash-dev)
 
 **Compatible with Quasar UI v2 and Vue 3**.
 
@@ -20,8 +20,8 @@ Create and register a boot file:
 
 ```js
 import Vue from 'vue'
-import Plugin from 'quasar-ui-dash-dev'
-import 'quasar-ui-dash-dev/dist/index.css'
+import Plugin from 'dash-dev'
+import 'dash-dev/dist/index.css'
 
 Vue.use(Plugin)
 ```
@@ -29,10 +29,10 @@ Vue.use(Plugin)
 **OR**:
 
 ```html
-<style src="quasar-ui-dash-dev/dist/index.css"></style>
+<style src="dash-dev/dist/index.css"></style>
 
 <script>
-import { Component as DForm } from 'quasar-ui-dash-dev'
+import { Component as DForm } from 'dash-dev'
 
 export default {
   
@@ -49,8 +49,8 @@ export default {
 
 ```js
 import Vue from 'vue'
-import Plugin from 'quasar-ui-dash-dev'
-import 'quasar-ui-dash-dev/dist/index.css'
+import Plugin from 'dash-dev'
+import 'dash-dev/dist/index.css'
 
 Vue.use(Plugin)
 ```
@@ -58,10 +58,10 @@ Vue.use(Plugin)
 **OR**:
 
 ```html
-<style src="quasar-ui-dash-dev/dist/index.css"></style>
+<style src="dash-dev/dist/index.css"></style>
 
 <script>
-import { Component as DForm } from 'quasar-ui-dash-dev'
+import { Component as DForm } from 'dash-dev'
 
 export default {
   
@@ -83,16 +83,16 @@ Add the following tag(s) after the Quasar ones:
 ```html
 <head>
   <!-- AFTER the Quasar stylesheet tags: -->
-  <link href="https://cdn.jsdelivr.net/npm/quasar-ui-dash-dev/dist/index.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/dash-dev/dist/index.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <!-- at end of body, AFTER Quasar script(s): -->
-  <script src="https://cdn.jsdelivr.net/npm/quasar-ui-dash-dev/dist/index.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dash-dev/dist/index.umd.min.js"></script>
 </body>
 ```
 If you need the RTL variant of the CSS, then go for the following (instead of the above stylesheet link):
 ```html
-<link href="https://cdn.jsdelivr.net/npm/quasar-ui-dash-dev/dist/index.rtl.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/dash-dev/dist/index.rtl.min.css" rel="stylesheet" type="text/css">
 ```
 
 # Setup

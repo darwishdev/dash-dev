@@ -1,0 +1,24 @@
+{  
+    "meta": {
+      "docsUrl": "https://dashdev.darwishdev.com/docs/DForm"
+    },
+  
+    "props": {
+        "default": {
+            "type": "Object",
+            "desc": "This prop accepts the QForm component props from the Quasar framework. It allows you to customize the overall behavior and appearance of the form.\n you can also add attributes for the form html element like class or id \n you cant check the QForm props here: https://quasar.dev/vue-components/form",
+            "examples": [ "default=\"myModel\"{class: 'row  justify-center q-pa-md', autofocus:true}" ]
+        },
+        "inputs": {
+            "type": "Array",
+            "desc": "This prop accepts an array of inputs",
+            "examples": [ "inputs=[{default: {name: 'name',label: 'name',},cols: 'col-6',initialValue: '',component: 'QInput',}," ]
+        },
+      "model-value": {
+        "extends": "model-value",
+        "type": "Object",
+        "desc": "This prop holds the state of the form on a reactive object. It allows you to keep track of the current values of the form fields and can be used to reset the form to its initial state.",
+        "examples": [ "v-model=\"myModel\"" ]
+      }}
+  }
+  

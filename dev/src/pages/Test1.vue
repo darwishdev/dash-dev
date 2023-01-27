@@ -29,6 +29,7 @@ const simpleFormProps = reactive({
 const formProps = reactive({
   default: {
     class: 'row  justify-center q-pa-md',
+    autofocus: true,
   },
   inputs: [
     {
@@ -216,6 +217,7 @@ onBeforeMount(() => {
   <q-page padding>
    {{ formData }}
     <DForm v-model="formData" @on-submit="onFormSubmit" v-if="!loading" :default="formProps.default" :inputs="formProps.inputs" />
+    <DTable v-model="formData" @on-submit="onFormSubmit" v-if="!loading" :default="formProps.default" :inputs="formProps.inputs" />
 
 
   </q-page>

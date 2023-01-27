@@ -1,8 +1,7 @@
 import {QBtn, QCheckbox, QDate, QForm, QInput, QOptionGroup, QRadio, QRange, QSelect, QSlider, QToggle} from 'quasar';
 import {h, onBeforeMount, ref} from 'vue'
-import DDate from './DDate';
 export default {
-  name: 'DForm',
+  name: 'DTable',
   props: {
     default: Object,
     inputs: Array,
@@ -24,7 +23,6 @@ export default {
       QRange: QRange,
       QDate: QDate,
       QRadio: QRadio,
-      DDate: DDate,
       QCheckbox: QCheckbox,
       QOptionGroup: QOptionGroup,
       QSlider: QSlider,
@@ -86,6 +84,7 @@ export default {
     return () => loading.value ? h('div', {innerHTML: 'Loading...'}) :
                                  h(QForm, {
                                    ...props.default,
+                                   autofocus: true,
                                    ref: rootRef,
                                    onreset: reset,
                                    submit: submit
